@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary-red: #cb3b0c;
+  --color-secondary-yellow: #ffc600;
+  --color-dark-bg: #0f1419;
+  --color-darker-bg: #0a0e12;
+  --color-accent: #ff4d00;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.gradient-red-to-yellow {
+  background: linear-gradient(135deg, #cb3b0c 0%, #ff4d00 50%, #ffc600 100%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-dark {
+  background-color: var(--color-darker-bg);
+  border: 1px solid rgba(203, 59, 12, 0.2);
+  border-radius: 12px;
+}
+
+.anomaly-high {
+  color: #ff4d00;
+  font-weight: 600;
+}
+
+.anomaly-normal {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.pulse-red {
+  animation: pulse-red 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-red {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

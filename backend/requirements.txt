@@ -1,0 +1,11 @@
+# Dependencias necesarias para el backend FastAPI
+# Ejecutar: pip install -r requirements.txt
+
+fastapi==0.104.1
+uvicorn==0.24.0
+numpy==2.4.6
+pandas==2.3.2
+tensorflow==2.15.0
+matplotlib==3.10.9
+seaborn==0.13.2
+python-multipart==0.0.6

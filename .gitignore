@@ -1,0 +1,115 @@
+# .gitignore - Barcelona Tactical Audit
+
+# ============================================
+# Environment & Config
+# ============================================
+.env
+.env.local
+.env.*.local
+*.env
+.venv/
+env/
+venv/
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================
+# Node & Frontend
+# ============================================
+node_modules/
+.next/
+out/
+.nuxt/
+dist/
+.cache/
+.parcel-cache
+.vercel
+
+# ============================================
+# IDE & Editors
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# Test & Coverage
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# ============================================
+# ML/Data
+# ============================================
+*.h5
+*.pkl
+*.joblib
+*.onnx
+__pycache__
+.ipynb_checkpoints/
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+*.log.*
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+.temp/
+tmp/
+*.bak
+*.backup
+.ckpt
+
+# ============================================
+# OS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+*.lnk
+Thumbs.db
+
+# ============================================
+# Local testing
+# ============================================
+test_results/
+debug_logs/
+*.sqlite
+*.db
