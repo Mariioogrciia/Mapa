@@ -25,7 +25,6 @@ Mapa/
 │   ├── package.json
 │   ├── tsconfig.json
 │   ├── tailwind.config.js
-│   ├── .env.local
 │   └── README.md
 │
 ├── backend/                           # ⚙️ FastAPI Python API
@@ -46,15 +45,14 @@ Mapa/
 ├── docs/                              # 📚 Documentación
 │   ├── QUICK_START.md                 # Guía rápida
 │   ├── DEPLOYMENT.md                  # Documentación completa
-│   ├── API.md                         # Referencia API
-│   └── ARCHITECTURE.md                # Arquitectura técnica
 │
 ├── scripts/                           # 🛠️ Scripts utilitarios
 │   ├── SETUP.bat                      # Setup para Windows
 │   ├── SETUP.sh                       # Setup para Unix
-│   └── train_model.py                 # Script de entrenamiento (opcional)
+│   └── README.md
 │
-├── .env                               # Variables de entorno
+├── .gitignore                         # Archivos ignorados
+└── README.md                          # Este archivo
 ├── .gitignore                         # Archivos ignorados
 └── README.md                          # Este archivo
 ```
@@ -190,7 +188,7 @@ GET /api/top-anomalies?limit=15
 GET /api/statistics
 ```
 
-[Ver documentación completa en `docs/API.md`]
+Ver documentación completa en la carpeta `docs/`
 
 ---
 
@@ -198,9 +196,9 @@ GET /api/statistics
 
 - **[QUICK_START.md](docs/QUICK_START.md)** - Guía rápida de inicio
 - **[DEPLOYMENT.md](docs/DEPLOYMENT.md)** - Documentación técnica completa
-- **[API.md](docs/API.md)** - Referencia de endpoints (próximamente)
-- **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - Detalles técnicos (próximamente)
-- **[Notebook](notebook/README.md)** - Explicación del análisis
+- **Notebook**: ver [notebook/README.md](notebook/README.md) para el análisis y entrenamiento
+
+> Nota: la referencia de API y la documentación de arquitectura se añadirán próximamente en la carpeta `docs/`.
 
 ---
 
