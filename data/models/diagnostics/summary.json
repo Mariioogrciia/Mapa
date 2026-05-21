@@ -1,0 +1,12 @@
+{
+  "train_n": 272,
+  "train_mse_mean": 0.06301335990428925,
+  "train_mse_std": 0.007028626278042793,
+  "test_n": 104,
+  "test_mse_mean": 0.06267024576663971,
+  "test_mse_std": 0.006609681062400341,
+  "explore_n": 99,
+  "explore_mse_mean": 0.06608898937702179,
+  "explore_mse_std": 0.006634396966546774,
+  "threshold_95_train": 0.07381002083420754
+}

@@ -1,0 +1,7 @@
+{
+  "loaded": false,
+  "errors": [
+    "Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'heatmap_input'}.\n\nException encountered: Unrecognized keyword arguments: ['batch_shape']",
+    "Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 64, 64, 1], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'heatmap_input'}.\n\nException encountered: Unrecognized keyword arguments: ['batch_shape']"
+  ]
+}

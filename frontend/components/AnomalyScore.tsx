@@ -17,7 +17,22 @@ interface AnomalyScoreProps {
 }
 
 export default function AnomalyScore({ prediction }: AnomalyScoreProps) {
-  const scorePercentage = Math.min(100, prediction.anomaly_score)
+  // `anomaly_score` puede ser: 1) un MSE pequeño (p.ej. 0.05) o 2) ya un valor porcentual (0..100).
+  // Si el valor es <= 1 lo interpretamos como MSE y lo convertimos relativo al umbral.
+  const scorePercentage = (() => {
+    try {
+      const raw = Number(prediction.anomaly_score || 0)
+      const thresh = Number(prediction.threshold || 1)
+      if (raw <= 1) {
+        // escalar respecto al umbral (si thresh>0)
+        if (thresh > 0) return Math.min(100, (raw / thresh) * 100)
+        return Math.min(100, raw * 100)
+      }
+      return Math.min(100, raw)
+    } catch (e) {
+      return 0
+    }
+  })()
   const isAnomalous = prediction.is_anomalous
 
   return (

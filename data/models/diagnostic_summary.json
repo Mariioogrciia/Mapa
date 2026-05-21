@@ -1,0 +1,85 @@
+{
+  "train": {
+    "n": 272,
+    "mse_mean": 0.06347739173188097,
+    "mse_std": 0.007011437984961939
+  },
+  "test": {
+    "n": 104,
+    "mse_mean": 0.06385210294102941,
+    "mse_std": 0.007129481029410294
+  },
+  "explore": {
+    "n": 99,
+    "mse_mean": 0.06894012049102941,
+    "mse_std": 0.008102948102941029
+  },
+  "threshold_95_train": 0.07380499318242073,
+  "top_explore": [
+    {
+      "match_id": 3773661,
+      "mse": 0.081653,
+      "is_anomaly": true,
+      "score": 10.6
+    },
+    {
+      "match_id": 16023,
+      "mse": 0.079751,
+      "is_anomaly": true,
+      "score": 8.0
+    },
+    {
+      "match_id": 16306,
+      "mse": 0.079511,
+      "is_anomaly": true,
+      "score": 7.7
+    },
+    {
+      "match_id": 3773415,
+      "mse": 0.077691,
+      "is_anomaly": true,
+      "score": 5.2
+    },
+    {
+      "match_id": 3773369,
+      "mse": 0.076627,
+      "is_anomaly": true,
+      "score": 3.8
+    },
+    {
+      "match_id": 3773547,
+      "mse": 0.075799,
+      "is_anomaly": true,
+      "score": 2.7
+    },
+    {
+      "match_id": 16136,
+      "mse": 0.075585,
+      "is_anomaly": true,
+      "score": 2.4
+    },
+    {
+      "match_id": 3773565,
+      "mse": 0.074432,
+      "is_anomaly": true,
+      "score": 0.8
+    },
+    {
+      "match_id": 3773586,
+      "mse": 0.074367,
+      "is_anomaly": true,
+      "score": 0.7
+    },
+    {
+      "match_id": 3773526,
+      "mse": 0.074329,
+      "is_anomaly": true,
+      "score": 0.7
+    }
+  ],
+  "latent_pca": {
+    "train_n": 272,
+    "test_n": 104,
+    "explore_n": 99
+  }
+}

@@ -2,13 +2,15 @@
 
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Zap, TrendingUp, AlertTriangle, BarChart3 } from 'lucide-react'
+import { Zap, TrendingUp, AlertTriangle, BarChart3, Info } from 'lucide-react'
 import MatchSelector from '@/components/MatchSelector'
 import HeatmapViewer from '@/components/HeatmapViewer'
 import AnomalyScore from '@/components/AnomalyScore'
 import TopAnomalies from '@/components/TopAnomalies'
 import Header from '@/components/Header'
 import Statistics from '@/components/Statistics'
+import UnusedMatches from '@/components/UnusedMatches'
+import Explanation from '@/components/Explanation'
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
@@ -34,7 +36,7 @@ export default function Home() {
   const [prediction, setPrediction] = useState<PredictionResult | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [activeTab, setActiveTab] = useState<'analysis' | 'anomalies' | 'stats'>('analysis')
+  const [activeTab, setActiveTab] = useState<'analysis' | 'anomalies' | 'stats' | 'about'>('analysis')
 
   const handleMatchSelect = async (matchId: number) => {
     setSelectedMatchId(matchId)
@@ -100,14 +102,38 @@ export default function Home() {
               Estadísticas
             </div>
           </button>
+          <button
+            onClick={() => setActiveTab('about')}
+            className={`px-6 py-3 font-semibold transition-all ${
+              activeTab === 'about'
+                ? 'text-red-500 border-b-2 border-red-500'
+                : 'text-gray-400 hover:text-gray-300'
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <Info size={18} />
+              Explicación
+            </div>
+          </button>
         </div>
 
         {/* Tab Content */}
         {activeTab === 'analysis' && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left: Match Selector */}
+            {/* Left: Match Selector / Unused */}
             <div className="lg:col-span-1">
+              <div className="flex gap-2 mb-4">
+                <button
+                  onClick={() => setActiveTab('analysis')}
+                  className={`px-3 py-2 text-sm rounded ${false ? 'bg-red-600' : 'bg-gray-800'}`}
+                >
+                  Selector
+                </button>
+              </div>
               <MatchSelector onSelectMatch={handleMatchSelect} />
+              <div className="mt-6">
+                <UnusedMatches onSelectMatch={handleMatchSelect} />
+              </div>
             </div>
 
             {/* Right: Results */}
@@ -149,6 +175,12 @@ export default function Home() {
         {activeTab === 'anomalies' && <TopAnomalies />}
 
         {activeTab === 'stats' && <Statistics />}
+
+        {activeTab === 'about' && (
+          <main className="container mx-auto px-4 py-8 max-w-4xl">
+            <Explanation />
+          </main>
+        )}
       </main>
     </div>
   )

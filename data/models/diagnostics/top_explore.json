@@ -1,0 +1,102 @@
+[
+  {
+    "match_id": 303610,
+    "mse": 0.08447664976119995,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773661,
+    "mse": 0.08165302127599716,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773415,
+    "mse": 0.07769119739532471,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773369,
+    "mse": 0.07662725448608398,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773547,
+    "mse": 0.07579876482486725,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773565,
+    "mse": 0.07443243265151978,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773586,
+    "mse": 0.07436691969633102,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773526,
+    "mse": 0.07432946562767029,
+    "is_anom": true
+  },
+  {
+    "match_id": 303400,
+    "mse": 0.07422813028097153,
+    "is_anom": true
+  },
+  {
+    "match_id": 3773386,
+    "mse": 0.07412570714950562,
+    "is_anom": true
+  },
+  {
+    "match_id": 303493,
+    "mse": 0.07382243871688843,
+    "is_anom": true
+  },
+  {
+    "match_id": 266462,
+    "mse": 0.07362737506628036,
+    "is_anom": false
+  },
+  {
+    "match_id": 303725,
+    "mse": 0.073317751288414,
+    "is_anom": false
+  },
+  {
+    "match_id": 3773428,
+    "mse": 0.07322817295789719,
+    "is_anom": false
+  },
+  {
+    "match_id": 303634,
+    "mse": 0.07283167541027069,
+    "is_anom": false
+  },
+  {
+    "match_id": 303682,
+    "mse": 0.07248057425022125,
+    "is_anom": false
+  },
+  {
+    "match_id": 3773597,
+    "mse": 0.07215552031993866,
+    "is_anom": false
+  },
+  {
+    "match_id": 303532,
+    "mse": 0.07209130376577377,
+    "is_anom": false
+  },
+  {
+    "match_id": 267520,
+    "mse": 0.07198606431484222,
+    "is_anom": false
+  },
+  {
+    "match_id": 303615,
+    "mse": 0.07195264846086502,
+    "is_anom": false
+  }
+]
